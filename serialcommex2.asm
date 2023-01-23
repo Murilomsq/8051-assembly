@@ -41,6 +41,7 @@ foundAAHloop:
 	djnz B, prox
 	mov R0, #40h
 	mov B, #09h
+	clr p1.0
 	jmp loop
 	prox:
 	mov @r0, A
