@@ -12,11 +12,7 @@ org 0033h
 	ret
 
 	timeout:
-		mov R0, #04h
-		call resetT0Value
-		mov A, P1
-		rr A
-		mov P1, A
+		;Insert timeout code here
 	ret
 	
 	hundredMScheck:
@@ -26,10 +22,7 @@ org 0033h
 			call resetT0Value
 	ret
 		
-	
 	inicio:
-		
-		
 		mov PSW, #00h
 		mov SP, #4fh
 		mov IE, #10000010b
