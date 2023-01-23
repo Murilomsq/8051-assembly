@@ -46,7 +46,3 @@ foundAAHloop:
 	mov @r0, A
 	inc R0
 jmp foundAAHloop
-
-
-
-
