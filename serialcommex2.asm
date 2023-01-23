@@ -39,7 +39,8 @@ foundAAHloop:
 	clr ri
 	mov a, sbuf
 	djnz B, prox
-	mov @R0, #0
+	mov @R0, #40h
+	mov B, #09h
 	jmp loop
 	prox:
 	mov @r0, A
