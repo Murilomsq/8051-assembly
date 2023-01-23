@@ -12,7 +12,9 @@ org 0033h
 	ret
 
 	timeout:
+		call resetT0Value
 		;Insert timeout code here
+		
 	ret
 	
 	hundredMScheck:
