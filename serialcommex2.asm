@@ -39,10 +39,14 @@ foundAAHloop:
 	clr ri
 	mov a, sbuf
 	djnz B, prox
-	mov @R0, #40h
+	mov R0, #40h
 	mov B, #09h
 	jmp loop
 	prox:
 	mov @r0, A
 	inc R0
 jmp foundAAHloop
+
+
+
+
